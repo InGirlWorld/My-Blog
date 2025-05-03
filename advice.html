@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ask Amirah – Advice Submission</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e9);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff69b4, #ff85c1);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background: #ff69b4;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e0559c;
+    }
+
+    footer {
+      background: #ff85c1;
+      text-align: center;
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ask Amirah</h1>
+    <p>Submit your question or situation — anonymously or with your name. I’ll answer on the blog.</p>
+  </header>
+
+  <div class="container">
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <label for="name">Your Name (optional):</label>
+      <input type="text" name="name" placeholder="You can leave this blank">
+
+      <label for="question">Your Question or Situation:</label>
+      <textarea name="question" rows="6" required placeholder="Tell me what’s going on..."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Amirah — Becoming Your Higher Self
+  </footer>
+</body>
+</html>
